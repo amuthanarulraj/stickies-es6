@@ -27,6 +27,7 @@ if (env === 'prod') {
     outputFile = outputFileName + '.js';
 }
 
+//Output configuration
 outPutConfig.filename = outputFile;
 outPutConfig.path = path.resolve(__dirname, 'dist');
 outPutConfig.publicPath = '/dist/';
@@ -61,7 +62,7 @@ const config = {
     devtool: 'source-map',
     resolve: {
         alias: {
-            Modules: path.resolve(__dirname, 'src/modules/')
+            Root: path.resolve(__dirname, 'src/')
         }
     },
     output: outPutConfig,
