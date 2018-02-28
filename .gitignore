@@ -1,0 +1,15 @@
+.#*
+*~
+*#
+#*
+*.log
+*.tmp
+.DS_Store
+**/npm-cache
+/node_modules
+/tmp
+.idea/
+.vscode/
+.idea/workspace.xml
+dist/docs/
+package-lock.json

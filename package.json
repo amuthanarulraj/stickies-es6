@@ -1,0 +1,24 @@
+{
+  "name": "stickies-es6",
+  "version": "1.0.0",
+  "description": "Stickies Application Using ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amuthanarulraj/stickies-es6.git"
+  },
+  "keywords": [
+    "stickies",
+    "es6",
+    "webpack"
+  ],
+  "author": "Amuthan Arulraj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amuthanarulraj/stickies-es6/issues"
+  },
+  "homepage": "https://github.com/amuthanarulraj/stickies-es6#readme"
+}

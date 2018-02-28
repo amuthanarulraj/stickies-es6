@@ -1,1 +1,1 @@
-#Stickies application using ES6 and webpackjs
+# Stickies application using ES6 and webpackjs
