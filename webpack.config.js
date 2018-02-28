@@ -7,6 +7,7 @@ let outputFileName = 'stickies',
     env = process.env.WEBPACK_ENV,
     plugins = [],
     outPutConfig = {},
+    optimization = {},
     outputFile,
     devServerConfig;
 
@@ -16,12 +17,7 @@ plugins.push(new webpack.NamedModulesPlugin());
 
 //Environment specific settings
 if (env === 'prod') {
-    plugins.push(new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false,
-            drop_console: false
-        }
-    }));
+    optimization.minimize = true;
     outputFile = outputFileName + '.min.js';
 } else {
     outputFile = outputFileName + '.js';
@@ -90,6 +86,7 @@ const config = {
             }
         ]
     },
+    optimization: optimization,
     plugins: plugins,
     devServer: devServerConfig
 };
