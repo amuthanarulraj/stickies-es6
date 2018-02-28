@@ -1,0 +1,1 @@
+#Stickies application using ES6 and webpackjs
