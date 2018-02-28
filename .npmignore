@@ -1,0 +1,10 @@
+.#*
+*~
+*#
+#*
+*.log
+.DS_Store
+**/npm-cache
+/node_modules
+/tmp
+/src
