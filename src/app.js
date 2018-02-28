@@ -1,4 +1,5 @@
 import Sticky from 'Root/sticky';
+import 'SCSS/main.scss';
 
 let addButton = document.getElementById('add-anchor'),
     addStickyListener = function(evt) {
@@ -27,6 +28,6 @@ addButton.addEventListener('click', addStickyListener);
 var createSticky = function(stickyDom) {
     var stickyArea = document.querySelector('.sticky-area'),
         sticky;
-    sticky = new Sticky(stickyArea);
+    sticky = new Sticky(stickyArea, stickyDom);
     sticky.create();
 }

@@ -5,8 +5,9 @@ export default class Sticky {
      * @param  {HTMLElement} parent {parent node for the sticky}
      * @public
      */
-    constructor(parent) {
+    constructor(parent, domText) {
         this.parent = parent;
+        this.domText = domText;
         this.position = this.getPosition();
         this.target = null;
     }
@@ -28,7 +29,7 @@ export default class Sticky {
             target.style.top = position.top;
             target.style.left = position.left;
             //Set dom
-            target.innerHTML = stickyDom;
+            target.innerHTML = this.domText;
             //Add new sticky to sticky area
             parent.appendChild(target);
         }

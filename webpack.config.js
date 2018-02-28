@@ -62,7 +62,8 @@ const config = {
     devtool: 'source-map',
     resolve: {
         alias: {
-            Root: path.resolve(__dirname, 'src/')
+            Root: path.resolve(__dirname, 'src/'),
+            SCSS: path.resolve(__dirname, 'sass/')
         }
     },
     output: outPutConfig,
