@@ -12,7 +12,7 @@ export default class Sticky {
     }
 
     /**
-     * Create sticky on the DOM.
+     * Creates sticky on the DOM once.
      *
      * @function {create}
      * @public

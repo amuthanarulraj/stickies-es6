@@ -1,37 +1,39 @@
 {
-  "name": "stickies-es6",
-  "version": "1.0.0",
-  "description": "Stickies Application Using ES6",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amuthanarulraj/stickies-es6.git"
-  },
-  "keywords": [
-    "stickies",
-    "es6",
-    "webpack"
-  ],
-  "author": "Amuthan Arulraj",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amuthanarulraj/stickies-es6/issues"
-  },
-  "homepage": "https://github.com/amuthanarulraj/stickies-es6#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.3",
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
-    "babel-plugin-transform-async-to-generator": "^6.24.1",
-    "babel-plugin-transform-regenerator": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "webpack": "^4.0.1",
-    "webpack-dev-server": "^3.1.0"
-  }
+    "name": "stickies-es6",
+    "version": "1.0.0",
+    "description": "Stickies Application Using ES6",
+    "main": "index.js",
+    "scripts": {
+        "build": "WEBPACK_ENV=prod node_modules/.bin/webpack --progress",
+        "dev": "WEBPACK_ENV=dev node_modules/.bin/webpack --progress",
+        "start": "WEBPACK_ENV=dev node_modules/.bin/webpack-dev-server --progress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amuthanarulraj/stickies-es6.git"
+    },
+    "keywords": [
+        "stickies",
+        "es6",
+        "webpack"
+    ],
+    "author": "Amuthan Arulraj",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/amuthanarulraj/stickies-es6/issues"
+    },
+    "homepage": "https://github.com/amuthanarulraj/stickies-es6#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.3",
+        "babel-plugin-syntax-dynamic-import": "^6.18.0",
+        "babel-plugin-transform-async-to-generator": "^6.24.1",
+        "babel-plugin-transform-regenerator": "^6.26.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-es2015": "^6.24.1",
+        "node-sass": "^4.7.2",
+        "sass-loader": "^6.0.6",
+        "webpack": "^4.0.1",
+        "webpack-dev-server": "^3.1.0"
+    }
 }
