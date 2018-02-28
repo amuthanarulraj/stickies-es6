@@ -20,6 +20,7 @@ if (env === 'prod') {
     optimization.minimize = true;
     outputFile = outputFileName + '.min.js';
 } else {
+    optimization.minimize = false;
     outputFile = outputFileName + '.js';
 }
 
